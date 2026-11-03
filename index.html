@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Day For Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+<div class="hearts"></div>
+<div class="butterflies">🦋 ♡ ✦ 🦋</div>
+
+<audio id="music" loop></audio>
+
+<main>
+
+    <!-- PIN -->
+    <section id="pinScreen" class="screen active">
+        <div class="card">
+
+            <div class="heart">♡</div>
+
+            <p class="small">A LITTLE SURPRISE FOR YOU</p>
+
+            <h1>hey, sayaaaanggg</h1>
+
+            <p>ada sesuatu kecil yang aku siapin buat kamu</p>
+
+            <p>masukin pin dulu yaa</p>
+
+            <input id="pin" type="password"
+            maxlength="6" placeholder="••••••">
+
+            <button onclick="unlock()">buka suratnya ♡</button>
+
+            <p id="error"></p>
+
+        </div>
+    </section>
+
+
+    <!-- SLIDES -->
+    <section id="slides" class="screen">
+
+        <div class="card">
+
+            <p class="small">WORLD COUPLE DAY · 04 NOVEMBER</p>
+
+            <div class="heart">♡</div>
+
+            <h1 id="title"></h1>
+
+            <p id="text" class="typing"></p>
+
+            <div id="buttons">
+                <button onclick="nextSlide()">lanjut yaa sayaaaanggg →</button>
+            </div>
+
+            <div class="progress">
+                <div id="bar"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENDING -->
+    <section id="ending" class="screen">
+
+        <div class="card">
+
+            <div class="heart">♡</div>
+
+            <h1>one last thing, sayaaaanggg</h1>
+
+            <p id="endingText" class="typing"></p>
+
+            <button onclick="location.reload()">
+                baca lagi dari awal ♡
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
